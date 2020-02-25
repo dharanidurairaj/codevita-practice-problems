@@ -24,3 +24,21 @@ for i in range(len(b)-c,len(b)):
 for j in range(0,len(b)-c):
    l.append(b[j])
 print(l)
+
+
+#using algorithm
+
+
+n=int(input())
+a=[]
+for i in range(0,n):
+    a.append(int(input()))
+r=int(input())
+for i in range(0,r):
+    t=a[n-1]
+    u=n-1
+    while(u>=0):
+        a[u] = a[u-1]
+        u = u-1
+    a[0] = t
+print(a)
