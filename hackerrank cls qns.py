@@ -67,3 +67,33 @@ for i in range(len(l)):
     k.append(l[i][1])
 h=min(p)*min(k)
 print(h)
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+n=int(input())
+a=0
+b=0
+min1,min2=0,0
+for i in range(n):
+    a,b=map(int,input().split(' '))
+    if(i==0):
+        min1,min2=a,b
+    if a<min1:
+        min1=a
+    if b<min2:
+        min2=b
+print(min1*min2)
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+a=int(input())
+b=[]
+c=[]
+for i in range(a):
+    d,e = map(int, input().split())
+    b.append(d)
+    c.append(e)
+print(min(b)*min(c))
+
