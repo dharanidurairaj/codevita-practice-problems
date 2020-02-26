@@ -6,7 +6,8 @@ o/p:
 
 
 n=int(input())
-while(i<n):
+i=1
+while(i<=n):
     if(n%i==0):
         n=n//i
         print(i)
